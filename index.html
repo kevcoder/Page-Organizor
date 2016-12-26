@@ -5,14 +5,21 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Page Organizer</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
   <div class="page">
       <div class="page-header cf">
         <h2>Students</h2>
-        
-        <-- dynamically insert search form here (optional) -->
-
+      
+      <!-- fix button so its on the right of the search input as opposed to the left -->
+      <!-- Student Search form   -->
+      <div class="student-search">
+				<input type="text" class="student-search" placeholder="Search">
+				<button>Search</button>
+			</div>
+			<!-- end of student search -->
+      
       </div>
       <ul class="student-list">
         <li class="student-item cf">
@@ -557,7 +564,28 @@
         </li>
       </ul>
       
-      <-- dynamically add pagination links here -->
+      <!-- wire up navigation so that the visitors can control how many students they can see per page -->
+      <!-- Page Navigation -->
+      <div class="pagination">
+      	<ul>
+      		<li>
+      			<a href="#" class="active">1</a>
+      		</li>
+      		<li>
+      			<a href="#">2</a>
+      		</li>
+      		<li>
+      			<a href="#">3</a>
+      		</li>
+      		<li>
+      			<a href="#">4</a>
+      		</li>
+      		<li>
+      			<a href="#">5</a>
+      		</li>
+      	</ul>
+      </div>
+		<!-- end of page Navigation -->
 
     </div>
 </body>
